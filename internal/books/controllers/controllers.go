@@ -10,7 +10,7 @@ func NewBooksController() *BooksController {
 }
 
 func (c *BooksController) RegisterRouter(r *gin.Engine) {
-	Books := r.Group("/Bookss")
+	Books := r.Group("/Books")
 
 	{
 		Books.POST("", c.CreateBook)
